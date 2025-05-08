@@ -1,0 +1,32 @@
+ @import "tailwindcss";
+
+.bg-dubraPrimary {
+  background-color: #001f45;
+  color: #e9f2ef;
+}
+
+.bg-dubraSecondary{
+  background-color: #c84630;
+  color: #e9f2ef;
+}
+
+.bg-dubraWhite{
+  background-color: #fefefe;
+  color: #001f45;
+}
+
+.color-dubraPrimary {
+  color: #001f45;
+}
+
+.color-dubraWhite{
+  color: #fefefe;
+}
+
+.color-dubraSecondary{
+  color: #c84630;
+}
+
+.color-dubraText{
+  color: #e9f2ef;
+}
