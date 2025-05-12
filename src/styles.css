@@ -1,32 +1,66 @@
- @import "tailwindcss";
 
-.bg-dubraPrimary {
-  background-color: #001f45;
-  color: #e9f2ef;
+@font-face {
+  font-family: 'Louis George Cafe Light';
+  src: url('./assets//fonts/LouisGeorgeCafeLight.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.bg-dubraSecondary{
-  background-color: #c84630;
-  color: #e9f2ef;
+@layer theme, base, components, utilities;
+@tailwind utilities;
+
+@layer components {
+
+  .bg-dubraPrimary {
+    @apply bg-[#001f45];
+    @apply text-[#e9f2ef];
+  }
+
+  .bg-dubraSecondary, .bg-dubraSecondaryHover {
+    @apply bg-[#cc5540] text-[#e9f2ef] transition-transform duration-300;
+  }
+
+  .bg-dubraSecondaryHover:hover{
+    @apply bg-[#d86d59];
+  }
+
+  .bg-dubraWhite{
+    @apply bg-[#fefefe];
+    @apply text-[#001f45];
+  }
+
+  .color-dubraPrimary {
+    @apply text-[#001f45];
+  }
+
+  .color-dubraWhite{
+    @apply text-[#fefefe];
+  }
+
+  .color-dubraSecondary{
+    @apply text-[#c84630];
+  }
+
+  .color-dubraText{
+    @apply text-[#e9f2ef];
+  }
+
+  .outline-color-dubraText{
+    @apply outline-[#e9f2ef];
+  }
+
 }
 
-.bg-dubraWhite{
-  background-color: #fefefe;
-  color: #001f45;
+@layer base {
+  body {
+    font-family: 'Louis George Cafe Light';
+  }
 }
 
-.color-dubraPrimary {
-  color: #001f45;
-}
-
-.color-dubraWhite{
-  color: #fefefe;
-}
-
-.color-dubraSecondary{
-  color: #c84630;
-}
-
-.color-dubraText{
-  color: #e9f2ef;
+#root{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: none;
 }
