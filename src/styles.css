@@ -49,6 +49,18 @@
     @apply outline-[#e9f2ef];
   }
 
+  .outline-color-dubraPrimary{
+    @apply outline-[#001f45]
+  }
+
+  .outline-color-dubraSecondary{
+    @apply outline-[#cc5540]
+  }
+
+  .outline-color-dubraWhite{
+    @apply outline-[#fefefe];
+  }
+
 }
 
 @layer base {

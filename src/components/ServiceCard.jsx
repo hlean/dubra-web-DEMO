@@ -10,7 +10,7 @@ import '../styles.css'
 
 const ServiceCard = ({title, description, content, icon, background, button }) => {
   return (
-    <Card className={`w-[28vh] ${background}`}>
+    <Card className={`w-[30vh] ${background} col-span-1 border-0 shadow-none`}>
         <CardHeader className="flex items-center gap-3">
           {icon && <div className="text-xl">{icon}</div>}
           <div>
