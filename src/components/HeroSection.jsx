@@ -2,6 +2,8 @@ import React from 'react'
 
 const HeroSection = ({title, subtitle, extraComponent, imageSrc, background, textColor, centerContent, fit}) => {
   return (
+    //Every section on the web have this structure:
+    //'extraComponent', 'imageSrc', 'subtitle', 'centerContent', 'fit', 'textColor' tags are optional.
     <section className={`flex ${fit? 'h-fit' : 'h-150'} w-full bg-cover bg-center justify-center items-center`} style={{ backgroundImage: `url(${imageSrc})` }}>
 
     <div className={`w-full h-full p-5  ${background} flex `}>

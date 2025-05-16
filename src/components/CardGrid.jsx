@@ -2,6 +2,7 @@ import React from 'react'
 
 const CardGrid = ({children}) => {
   return (
+    // Grid for 4 ServiceCards 
     <div className='grid xs:grid-cols-1 p-5 md:grid-cols-2 2xl:grid-cols-4 gap-10'>
         {children}
     </div>
