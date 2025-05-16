@@ -55,7 +55,7 @@ const HomePage = () => {
               </ServiceCard>
 
             </CardGrid>
-            <Button className='md:text-3xl xs:text-sm font-bold bg-dubraSecondaryHover xs:w-1/2 lg:w-1/3 py-8 mt-5 '>PROGRAMAR UN ENVÍO</Button>
+            <Button className='md:text-3xl xs:text-sm font-bold bg-dubraSecondaryHover xs:w-2/3 2xl:w-1/3 py-8 mt-5 '>PROGRAMAR UN ENVÍO</Button>
           </div>}/>
 
         <HeroSection
