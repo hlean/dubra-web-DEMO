@@ -16,10 +16,12 @@ const NavBar = ({Logo}) => {
   return (
 
     <div>
-        <NavigationMenu className='justify-between min-w-full bg-dubraPrimary'>
+        <NavigationMenu className='justify-between min-w-full bg-dubraPrimary py-2'>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <img src={Logo} alt="Dubra Transporte y Logística Logo"  className='w-70 pe-10' />
+                    <a href='#'>
+                        <img src={Logo} alt="Dubra Transporte y Logística Logo" className='w-70 pe-10' />
+                    </a>
                 </NavigationMenuItem>
             </NavigationMenuList>
 
