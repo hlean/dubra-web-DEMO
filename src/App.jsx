@@ -1,16 +1,21 @@
 import './styles.css'
 import './tailwind.css'
-import Header from './components/Header'
+import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage'
-import Footer from './components/Footer'
+import RegisterPage from './components/pages/RegisterPage'
+import LoginPage from './components/pages/LoginPage'
+import DashboardPage from './components/pages/DashboardPage'
 
 function App() {
 
   return (
     <>
-      <Header/>
-      <HomePage/>
-      <Footer/>
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/registrarse" element={<RegisterPage />} />
+        <Route path="/dashboard" element={<DashboardPage />} />
+      </Routes>
     </>
   )
 }

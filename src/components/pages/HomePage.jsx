@@ -6,10 +6,13 @@ import { Truck, FileText, PackageOpen, History, Rat } from 'lucide-react'
 import TrackingInputGroup from '../TrackingInputGroup'
 import CardGrid from '../CardGrid'
 import { Button } from '../ui/button'
+import Header from '../Header'
+import Footer from '../Footer'
 
 const HomePage = () => {
   return (
     <div>
+      <Header />
         <HeroSection
         imageSrc={camioneta}
         title={'SEGUÍ TU ENVÍO'}
@@ -105,7 +108,7 @@ const HomePage = () => {
 
             </CardGrid>
           </div>}/>
-
+      <Footer />
     </div>
   )
 }
