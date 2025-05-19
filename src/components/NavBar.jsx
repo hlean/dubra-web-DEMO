@@ -41,7 +41,7 @@ const NavBar = ({Logo}) => {
                         <NavBarButton text={'Sobre Nosotros'} link={'/nosotros'}/>
                         <Link to="/login">
                             <Button className='text-lg bg-dubraSecondary hover:bg-dubraSecondary/80 p-3 font-bold'>
-                                Iniciar Sesion
+                                Iniciar Sesión
                             </Button>
                         </Link>
 
@@ -61,6 +61,7 @@ const NavBar = ({Logo}) => {
                 <ul className="py-2 mx-5">
                     <NavBarButton text={'Inicio'} link={'/'}/>
                     <NavBarButton text={'Sobre Nosotros'} link={'/nosotros'}/>
+                    <NavBarButton text={'Iniciar Sesión'} link={'/login'}/>
                 </ul>
             </NavigationMenu>
         </div>
