@@ -1,7 +1,7 @@
 import React from 'react';
 import FormBuilder from '../FormBuilder';
 import { z } from 'zod';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { API_BASE_URL, ROUTES } from '../../lib/constants';
 
 const schema = z.object({
@@ -37,6 +37,7 @@ export default function RegisterForm() {
     <FormBuilder
       title="Registrarse"
       description="Creá tu cuenta para comenzar a operar"
+      background={'bg-dubraPrimary'}
       fields={[
         { name: 'name', label: 'Nombre completo', placeholder: 'Juan Pérez' },
         { name: 'email', label: 'Correo electrónico', placeholder: 'nombre@ejemplo.com' },
@@ -56,9 +57,9 @@ export default function RegisterForm() {
       footer={
         <p className="text-md text-muted-foreground">
           ¿Ya tenés una cuenta?{' '}
-          <a href={ROUTES.LOGIN} className="text-terracotta hover:underline">
+          <Link to={ROUTES.LOGIN} className="text-terracotta hover:underline">
             Iniciar sesión
-          </a>
+          </Link>
         </p>
       }
     />

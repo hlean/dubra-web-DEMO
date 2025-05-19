@@ -1,7 +1,7 @@
 import React from 'react';
 import FormBuilder from '../FormBuilder';
 import { z } from 'zod';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { API_BASE_URL, ROUTES } from '../../lib/constants';
 
 const schema = z.object({
@@ -34,6 +34,7 @@ export default function LoginForm() {
     <FormBuilder
       title="Iniciar sesión"
       description="Accedé a tu cuenta para gestionar tus envíos"
+      background={'bg-dubraPrimary'}
       fields={[
         { name: 'email', label: 'Correo electrónico', type: 'email', placeholder: 'nombre@ejemplo.com' },
         { name: 'password', label: 'Contraseña', type: 'password', placeholder: '******' },
@@ -47,9 +48,9 @@ export default function LoginForm() {
       footer={
         <p className="text-md text-muted-foreground">
           ¿No tenés una cuenta?{' '}
-          <a href={ROUTES.REGISTER} className="text-terracotta hover:underline">
+          <Link to={ROUTES.REGISTER} className="text-terracotta hover:underline">
             Registrate
-          </a>
+          </Link>
         </p>
       }
     />

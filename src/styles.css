@@ -12,55 +12,26 @@
 @layer components {
 
   .bg-dubraPrimary {
-    @apply bg-[#001f45];
-    @apply text-[#e9f2ef];
+    @apply bg-dubraPrimary;
+    @apply text-dubraText;
   }
 
-  .bg-dubraSecondary, .bg-dubraSecondaryHover {
-    @apply bg-[#cc5540] text-[#e9f2ef] transition-transform duration-300;
-  }
-
-  .bg-dubraSecondaryHover:hover{
-    @apply bg-[#d86d59];
+  .bg-dubraSecondary {
+    @apply bg-dubraSecondary text-dubraText transition-transform duration-300;
   }
 
   .bg-dubraWhite{
-    @apply bg-[#fefefe];
-    @apply text-[#001f45];
+    @apply bg-dubraWhite;
+    @apply text-dubraPrimary;
   }
 
-  .color-dubraPrimary {
-    @apply text-[#001f45];
-  }
+}
 
-  .color-dubraWhite{
-    @apply text-[#fefefe];
-  }
-
-  .color-dubraSecondary{
-    @apply text-[#c84630];
-  }
-
-  .color-dubraText{
-    @apply text-[#e9f2ef];
-  }
-
-  .outline-color-dubraText{
-    @apply outline-[#e9f2ef];
-  }
-
-  .outline-color-dubraPrimary{
-    @apply outline-[#001f45]
-  }
-
-  .outline-color-dubraSecondary{
-    @apply outline-[#cc5540]
-  }
-
-  .outline-color-dubraWhite{
-    @apply outline-[#fefefe];
-  }
-
+@theme {
+  --color-dubraPrimary: #001f45;
+  --color-dubraSecondary: #c84630;
+  --color-dubraText: #e9f2ef;
+  --color-dubraWhite: #fefefe;
 }
 
 @layer base {

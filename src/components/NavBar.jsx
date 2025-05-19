@@ -20,9 +20,9 @@ const NavBar = ({Logo}) => {
         <NavigationMenu className='justify-between min-w-full bg-dubraPrimary py-2'>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <a href='/'>
+                    <Link to='/'>
                         <img src={Logo} alt="Dubra Transporte y Logística Logo" className='w-70 pe-10' />
-                    </a>
+                    </Link>
                 </NavigationMenuItem>
             </NavigationMenuList>
 
@@ -40,7 +40,7 @@ const NavBar = ({Logo}) => {
                         <NavBarButton text={'Inicio'} link={'/'}/>
                         <NavBarButton text={'Sobre Nosotros'} link={'/nosotros'}/>
                         <Link to="/login">
-                            <Button className='text-lg bg-dubraSecondaryHover p-3 font-bold'>
+                            <Button className='text-lg bg-dubraSecondary hover:bg-dubraSecondary/80 p-3 font-bold'>
                                 Iniciar Sesion
                             </Button>
                         </Link>

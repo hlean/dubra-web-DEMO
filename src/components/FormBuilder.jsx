@@ -18,6 +18,7 @@ export default function FormBuilder({
   defaultValues,
   onSubmit,
   footer,
+  background
 }) {
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState(null);
@@ -49,11 +50,10 @@ export default function FormBuilder({
       setIsLoading(false);
     }
   };
-
   return (
-    <Card className="w-full max-w-md">
+    <Card className={`w-full max-w-md ${background}`}>
       <CardHeader>
-        <CardTitle className="text-3xl text-darkBlue">{title}</CardTitle>
+        <CardTitle className="text-3xl">{title}</CardTitle>
         <CardDescription className="text-md">{description}</CardDescription>
       </CardHeader>
 
@@ -76,16 +76,18 @@ export default function FormBuilder({
           {error && (
             <div className="bg-red-50 text-red-500 p-3 rounded-md text-sm">{error}</div>
           )}
-
-          <ReCAPTCHA
+          <div className='w-full flex justify-center'>
+            <ReCAPTCHA
             sitekey="6Le6TT0rAAAAAHU_N1_hMggXegZoA8gyl4FNeEEM"
             onChange={(token) => setRecaptchaToken(token)}
             onExpired={() => setRecaptchaToken(null)}
-          />
+            />
+          </div>
+          
 
           <Button
             type="submit"
-            className="bg-dubraSecondaryHover font-bold"
+            className="bg-dubraSecondary hover:bg-dubraSecondary/80 font-bold"
             disabled={isLoading}
           >
             {isLoading ? 'Procesando...' : title}

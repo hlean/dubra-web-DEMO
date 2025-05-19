@@ -21,7 +21,7 @@ const Footer = () => {
             <p className='text-lg pb-6 font-bold'>Enlaces Rápidos</p>
             <NavigationMenu>
                 <NavigationMenuList className='flex-col items-start'>
-                    <NavBarButton text={'Inicio'} link={'#'}/>
+                    <NavBarButton text={'Inicio'} link={'/'}/>
                     <NavBarButton text={'Sobre Nosotros'} link={'#'}/>
                     <NavBarButton text={'Programar un envio'} link={'#'}/>
                 </NavigationMenuList>
