@@ -6,7 +6,7 @@ const RegisterPage = () => {
         <div>
           <HeroSection
           extraComponent={<RegisterForm/>}
-          background={'bg-gradient-to-br from-dubraText to-dubraPrimary pt-20'}
+          background={'bg-gradient-to-br from-dubraText to-dubraPrimary pt-25'}
           customHeight='h-full'
           centerContent={true}
           />
